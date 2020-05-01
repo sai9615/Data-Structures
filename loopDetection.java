@@ -9,7 +9,7 @@ public class loopDetection{
             obj.insert(i,i);
         }
         obj.insert(0,5);
-        obj.head.next.next.next.next.next = obj.head;
+        obj.head.next.next.next.next = obj.head;
             int flag = 0;
             LinkedList.Node prev = obj.head;
             LinkedList.Node top = obj.head.next;
