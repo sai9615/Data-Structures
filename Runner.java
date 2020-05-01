@@ -62,16 +62,27 @@ public class Runner{
 //        obj5.peek();
 //        obj5.display();
 
-        doublyLinkedList<Integer> obj6 = new doublyLinkedList<Integer>();
-        for(int i=0; i<5; i++){
-        obj6.insertAtEnd(i);
-        }
-        obj6.insertAfter(obj5.head.next, 10);
-        obj6.insertBefore(obj5.head, 20);
-        obj6.deleteBefore(obj5.head.next);
-        obj6.deleteAfter(obj5.head.next);
-        obj6.deleteAll();
-        obj6.display();
-    }
+//        doublyLinkedList<Integer> obj6 = new doublyLinkedList<Integer>();
+//        for(int i=0; i<5; i++){
+//        obj6.insertAtEnd(i);
+//        }
+//        obj6.insertAfter(obj6.head.next, 10);
+//        obj6.insertBefore(obj6.head, 20);
+//        obj6.deleteBefore(obj6.head.next);
+//        obj6.deleteAfter(obj6.head.next);
+//        obj6.deleteAll();
+//        obj6.display();
+//    }
 
+    circularDLL<Integer> obj7 = new circularDLL<Integer>();
+        for(int i=0; i<5; i++){
+        obj7.insertAtEnd(i);
+    }
+        obj7.insertAfter(obj7.head.next, 10);
+        obj7.insertBefore(obj7.head.next, 20);
+        obj7.deleteBefore(obj7.head.next.next);
+        obj7.deleteAfter(obj7.head.next);
+        obj7.deleteAll();
+        obj7.display();
+}
 }
