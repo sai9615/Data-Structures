@@ -3,11 +3,11 @@ import java.util.*;
 public class LinkedList{
 
     public class Node{
-        int data; 
+        int data;
         Node next;
     }
 
-    Node head;
+    public Node head;
 
     public void insert(int value, int index ){
         Node temp = new Node();
